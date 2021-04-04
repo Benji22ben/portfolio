@@ -1,0 +1,58 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+nav{
+  font-size: 2rem;
+  color: white;
+  text-shadow: 0px 0px 20px #26E3DD;
+}
+nav ul{
+  display: flex;
+}
+nav a{
+  animation: navi 2s ease-in-out forwards;
+  margin: auto 20px;
+  padding: 10px 20px;
+}
+nav a:hover{
+  transition: 400ms;
+  box-shadow: 0px 0px 20px #26E3DD;
+}
+.logo{
+  width: 100px;
+  height: 100px;
+}
+.logo:hover{
+  animation: test 3s ease-in forwards;
+}
+@keyframes test{
+  0%{
+    transform: rotate(0deg);
+    opacity: 50%;
+  }
+  50%{
+    opacity: 100%;
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+    opacity: 50%;
+  }
+}
+@keyframes navi{
+  0%{
+    border: dotted $blue 2px;
+  }
+  50%{
+    // box-shadow: 0px 0px 100px yellow;
+  }
+  100%{
+    border: solid $purple 2px;
+    border-radius: 20px;
+
+  }
+}
